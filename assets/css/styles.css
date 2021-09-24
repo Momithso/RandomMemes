@@ -133,8 +133,11 @@ emoji.two {
     transform: scale(1.05);
     text-decoration: none;
 }
-.githubLink img {
+.githubLink img.banner {
     width: 64px;
+}
+.githubLink img.logo {
+    width: 28px;
 }
 
 @media only screen and (max-width: 600px) {
