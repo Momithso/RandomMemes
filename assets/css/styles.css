@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Press+Start+2P&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+* {
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    background-color: #181818;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    display: -ms-grid;
+    display: -moz-grid;
+    justify-items: center;
+}
+
+main > .heading {
+    height: max-content;
+    display: grid;
+    text-align: center;
+    justify-items: center;
+}
+main > .heading > h1 {
+    margin: .4em auto;
+    height: max-content;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32pt;
+}
+main > .heading > p {
+    margin: 0 0 .5em;
+    font-size: 1.5em;
+    color: #ff3e3e;
+}
+
+#MemeContainer {
+    height: max-content;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#ImageContainer {
+    display: grid;
+}
+#ImageContainer img {
+    width: 40vw;
+    min-width: 280px;
+    max-width: 420px;
+}
+#ImageContainer a {
+    width: max-content;
+    margin: .5em 0;
+    font-size: 14pt;
+}
+#ImageContainer .memeContainer {
+    width: 100%;
+    max-height: 58vh;
+    overflow-y: auto;
+}
+
+#SearchInput {
+    padding: .25em;
+    border-radius: 8px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button {
+    width: 140px;
+    margin: 1em 0 1em 0;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: red;
+    box-shadow: 3px 2px 15px black;
+}
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+emoji {
+    position: absolute;
+    font-size: 9vw;
+}
+emoji.one {
+    transform: rotate(20deg) translate(290%, -40%);
+}
+emoji.two {
+    transform: rotate(-20deg) translate(-290%, -10%);
+}
+
+@media only screen and (max-width: 600px) {
+
+    #ImageContainer .memeContainer {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+}

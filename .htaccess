@@ -1,0 +1,22 @@
+# Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^randommemes.pewtech.de[nc]
+RewriteRule ^(.*)$ http://www.randommemes.pewtech.de/$1 [r=301,nc]
+
+# Caching schema
+#<FilesMatch "\.(png|css|js|jpg)$">
+#Header set Cache-Control "max-age=3600"
+#</FilesMatch>
+
+# Change default directory page
+DirectoryIndex index.html
+
+# Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# Prevent directory listings
+Options All -Indexes

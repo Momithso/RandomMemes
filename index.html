@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="robots" content="NOINDEX,NOFOLLOW" />
+        <meta http-equiv="content-Language" content="de" />
+        <meta name="description" content="Lasse dir zufällige Memes anzeigen &#128514" />
+        <meta name="keywords" content="Memes, Reddit, Random, Zufaellig" />
+        <meta name="author" content="PewTech" />
+        <meta name="revisit-after" content="2 days" />
+        <meta property="og:title" content="Random Memes">
+        <meta property="og:description" content="Lasse dir zufällige Memes anzeigen &#128514">
+        <meta property="og:image" content="http://randommemes.pewtech.de/assets/images/icon.png">
+        <meta property="og:url" content="http://randommemes.pewtech.de/">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Random Memes</title>
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="shortcut icon" type="image/png" sizes="256x256" href="./assets/images/icon.png">
+        <script src="./assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <section class="heading">
+                <h1>Random Memes</h1>
+                <p>Such nach einem Thema!</p>
+                <input id="SearchInput" type="search" placeholder="Thema">
+                <a class="button" onclick="getRandomMeme();">Get a Meme</a>
+            </section>
+            <section id="MemeContainer">
+                <div id="ImageContainer"></div>
+            </section>
+            <emoji class="one">&#128514</emoji>
+            <emoji class="two">&#128514</emoji>
+        </main>
+    </body>
+</html>
