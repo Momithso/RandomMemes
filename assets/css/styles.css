@@ -118,6 +118,25 @@ emoji.two {
     transform: rotate(-20deg) translate(-290%, -10%);
 }
 
+.githubLink {
+    height: max-content;
+    margin-bottom: 2em;
+    display: grid;
+    font-size: .85em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2.5px;
+    justify-items: center;
+    align-items: center;
+}
+.githubLink:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+}
+.githubLink img {
+    width: 64px;
+}
+
 @media only screen and (max-width: 600px) {
 
     #ImageContainer .memeContainer {
